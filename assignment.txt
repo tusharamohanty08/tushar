@@ -1,0 +1,90 @@
+class Test{}
+class Demo{}
+class Message{}
+class Result{}
+class X{}
+class Cow{}
+class Pupil{}
+class Student{}
+class Lion{}
+class N{}
+class Book{}
+class Hello{}
+
+class Assignment
+{
+    public static void main (String[]args) {
+        
+    
+static Test m1(int a,X x,Cow calf)
+{
+System.out.println("m1() method...");
+System.out.println("The value of x="+x);
+System.out.println("The value of calf="+calf);
+System.out.println("The value of a="+a);
+
+Test t=new Test();
+return t;
+}
+
+Demo m2(Student s,Pupil p,Message m)
+{
+System.out.println("m2() method...");
+System.out.println("The value of s="+s);
+System.out.println("The value of p="+p);
+System.out.println("The value of m="+m);
+
+Demo d=new Demo();
+return d;
+}
+
+static Message m3(byte b,N n,Lion cub)
+{
+System.out.println("The value of b="+b);
+System.out.println("The value of n="+n);
+System.out.println("The value of cub="+cub);
+Message m=new Message();
+return m;
+}
+
+Result m4(short s,String str,Book b)
+{
+System.out.println("The value of s="+s);
+System.out.println("The value of str="+str);
+System.out.println("The value of b="+b);
+Result r=new Result();
+return r;
+}
+boolean m5(double d,char ch,Hello h)
+{
+System.out.println("The value of d="+d);
+System.out.println("The value of ch="+ch);
+System.out.println("The value of h="+h);
+return true;
+}
+
+public static void main(String[] args)
+{
+Test t1=Assignment.m1(101,new X(),new Cow());
+System.out.println("m1() method returns value ="+t1);
+
+System.out.println("==================================");
+Assignment a=new Assignment();
+Demo d1=a.m2(new Student(),new Pupil(),new Message());
+System.out.println("m2() method returns value d1="+d1);
+
+System.out.println("=====================================");
+Message m1=Assignment.m3((byte)10,new N(),new Lion());
+System.out.println("m3 method retuens value m1="+m1);
+
+System.out.println("=======================================");
+Result r=a.m4((short)30,"islam",new Book());
+System.out.println("m4() method returns value r="+r);
+System.out.println("=========================================");
+
+boolean b2=a.m5(4.5,'l',new Hello());
+System.out.println("m5() method returns value b2="+b2);
+
+}
+}
+}
